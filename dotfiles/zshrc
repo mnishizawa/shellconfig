@@ -64,6 +64,8 @@ else
   export EDITOR='mvim'
 fi
 
+PS1="$PS1"'$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#D" | tr -d %) "$PWD")'
+
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
