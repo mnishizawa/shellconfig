@@ -1,5 +1,6 @@
 # Path to your oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh
+export ZSH_CUSTOM=~/shellconfig
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -46,6 +47,7 @@ CASE_SENSITIVE="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git brew mvn sbt ssh-agent sudo tmux osx)
+
 
 # User configuration
 
