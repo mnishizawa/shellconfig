@@ -64,6 +64,8 @@ else
   export EDITOR='mvim'
 fi
 
+export RUST_SRC_PATH="/Users/michael/development/libs/rust/src"
+
 PS1="$PS1"'$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#D" | tr -d %) "$PWD")'
 
 # Compilation flags
