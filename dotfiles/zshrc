@@ -2,9 +2,7 @@
 export ZSH=~/.oh-my-zsh
 export ZSH_CUSTOM=~/shellconfig
 
-export PATH="/opt/boxen/rbenv/shims:/Users/mic60076/.rbenv/bin:/Users/mic60076/bin:/usr/local/bin:/Library/Java/JavaVirtualMachines/jdk1.7.0_67.jdk/Contents/Home/bin:/opt/spectrum_health/homeBin:/opt/spectrum_health/homeBin/ignore_dir:/opt/boxen/plenv/shims:/opt/boxen/plenv/bin:/opt/boxen/plenv/plugins/perl-build/bin:bin:/opt/boxen/homebrew/share/python:/opt/boxen/rbenv/shims:/opt/boxen/rbenv/bin:/opt/boxen/rbenv/plugins/ruby-build/bin:node_modules/.bin:/opt/boxen/nodenv/shims:/opt/boxen/nodenv/bin:/opt/boxen/bin:/opt/boxen/homebrew/bin:/opt/boxen/homebrew/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin"
-
-[ -f /opt/spectrum_health/profiles/phProfile ] && source /opt/spectrum_health/profiles/001_envvars_profile && source /opt/spectrum_health/profiles/002_path_profile 
+export PATH="/usr/local/bin:/Library/Java/JavaVirtualMachines/jdk1.7.0_67.jdk/Contents/Home/bin:bin:node_modules/.bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin"
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -50,7 +48,7 @@ CASE_SENSITIVE="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git brew mvn sbt ssh-agent sudo tmux osx)
+plugins=(gitfast brew mvn sbt ssh-agent sudo tmux osx)
 
 
 # User configuration
@@ -85,3 +83,5 @@ PS1="$PS1"'$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#D" | tr -
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+. `brew --prefix`/etc/profile.d/z.sh
+
